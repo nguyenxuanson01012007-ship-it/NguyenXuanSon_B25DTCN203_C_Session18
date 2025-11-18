@@ -4,10 +4,10 @@ void inputarr(int *a,int *n){
 	do{
 		printf("Nhap so phan tu cua mang: ");
 		scanf("%d",n);
-		if(*n<1 || *n>100){
+		if(*n<0 || *n>100){
 			printf("Nhap lai n\n");
 		}
-	}while(*n<1 || *n>100);
+	}while(*n<0 || *n>100);
 	
 	for(int i=0;i<*n;i++){
 		printf("arr[%d]: ",i);
@@ -29,6 +29,7 @@ int main (){
 	inputarr(arr,&n);
 	displayarr(arr,n);
 }
+
 
 
 
